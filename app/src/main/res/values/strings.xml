@@ -1,3 +1,55 @@
 <resources>
     <string name="app_name">Network Marketing</string>
+
+    <!--notes-->
+    <string name="definition">
+        A business model in which a distributor network is needed to build the
+        business. Usually such businesses are also multilevel marketing in nature in that payouts
+        occur at more than one level. "\n\n"Network marketing is a type of business opportunity that is very popular with people looking
+        for part-time, flexible businesses. Some of the best-known companies in America, including
+        Avon, Mary Kay Cosmetics, Rain International and Tupperware, fall under the network
+        marketing umbrella. "\n\n"
+
+        Network marketing programs feature a low upfront investment-usually only a few hundred
+        dollars for the purchase of a product sample kit-and the opportunity to sell a product line
+        directly to friend, family and other personal contacts. Most network marketing programs also ask
+        participants to recruit other sales representatives. The recruits constitute a reps downline, and
+        their sales generate income for those above them in the program."\n\n"
+
+        Things can get sticky when a network marketing network compensates participants primarily for
+        recruiting others rather than for selling the companys products or services. A network marketing
+        system in which most of the revenue comes from recruitment may be considered an illegal
+        pyramid scheme."\n\n"
+
+        Since network marketing programs are usually exempt from business opportunity regulation and
+        arent defined as franchises under state and federal franchise laws, youll need to do your own
+        investigation before investing any money."\n\n"
+
+    </string>
+
+    <string name="mlm_and_pyramid_schemes">
+        Multilevel Marketing (MLM) and Pyramid Schemes Can Be Very Similar"\n"
+        Considering a multilevel marketing opportunity (MLM)? Be careful. It may well be a
+        legitimate multilevel marketing business. Or it may be a pyramid scheme - an illegal scam
+        designed to steal your money. This article explains the difference between MLM and pyramid
+        schemes so you can distinguish between them.
+
+        Multilevel Marketing Can Be a Good Thing"\n"
+        Multilevel marketing (MLM) is an attractive business proposition to many people. It offers the
+        opportunity to become involved in a system for distributing products to consumers. Unlike the
+        person starting a business from scratch, the MLM participant has the support of a direct
+        selling company that supplies the products and sometimes offers training as well.
+
+    </string>
+
+    <string name="how_the_mlm_works">
+        As a MLM consultant or contractor or distributor (different companies call them different
+        things) you make your money by selling the products to other multilevel marketing participants.
+        If they are not already a member of your MLM Company, you sign them up."\n\n"Besides earning money off your own sales, you also earn a percentage of the income generated
+        by the distributors that you have brought into the program (these are known as your downline).
+        Often there are bonuses for selling particular amounts of product or signing up a certain number
+        of new members; you can earn cars and trips as well as cash. Sounds good, does not it? And being
+        part of a well-run MLM business can be a lot like being a member of a large extended family.
+
+    </string>
 </resources>

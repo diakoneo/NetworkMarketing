@@ -34,6 +34,8 @@ public class ReadNotes extends AppCompatActivity {
         topic.setText(notes.getTopic());
         note.setText(notes.getNote());
 
+        setTitle("Network Marketing - " +notes.getTopic());
+
 
 
     }

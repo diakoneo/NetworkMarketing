@@ -20,7 +20,8 @@
             android:layout_alignParentTop="true"
             android:gravity="center"
             android:text="TOPIC"
-            android:textSize="25sp"
+            android:textSize="28sp"
+            android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
@@ -30,7 +31,7 @@
             android:layout_below="@id/read_topic"
             android:gravity="start"
             android:text="TOPIC"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"/>
 
     </RelativeLayout>

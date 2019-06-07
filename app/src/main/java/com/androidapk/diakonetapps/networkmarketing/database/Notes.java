@@ -3,13 +3,15 @@ package com.androidapk.diakonetapps.networkmarketing.database;
 public class Notes {
 
     private String topic;
+    private String file;
     private String note;
-    private int image;
+    private String image;
 
     public Notes(){}
 
-    public Notes(String topic, String note, int image) {
+    public Notes(String topic, String file, String note, String image) {
         this.topic = topic;
+        this.file = file;
         this.note = note;
         this.image = image;
     }
@@ -22,6 +24,14 @@ public class Notes {
         this.topic = topic;
     }
 
+    public String getFile() {
+        return file;
+    }
+
+    public void setFile(String file) {
+        this.file = file;
+    }
+
     public String getNote() {
         return note;
     }
@@ -30,11 +40,11 @@ public class Notes {
         this.note = note;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 }

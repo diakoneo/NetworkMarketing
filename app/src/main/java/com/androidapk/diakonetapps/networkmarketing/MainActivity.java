@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 int itemNo = position + 1;
 
               //  Toast.makeText(MainActivity.this, "Position: " +position, Toast.LENGTH_SHORT).show();
-                Intent read = new Intent(MainActivity.this, ReadNotes.class);
+                Intent read = new Intent(MainActivity.this, ReadActivity.class);
                 read.putExtra("item_number", itemNo);
                 startActivity(read);
             }

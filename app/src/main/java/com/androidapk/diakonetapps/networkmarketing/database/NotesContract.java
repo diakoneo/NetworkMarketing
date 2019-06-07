@@ -9,6 +9,7 @@ public final class NotesContract {
     public static class NotesTable implements BaseColumns {
         public static final String TABLE_NAME = "notes";
         public static final String COLUMN_TOPIC = "topic";
+        public static final String COLUMN_FILE = "file";
         public static final String COLUMN_TEXT = "text";
         public static final String COLUMN_IMAGE = "image";
     }

@@ -73,8 +73,8 @@ public class NotesDbHelper extends SQLiteOpenHelper {
                 "");
         addNote(n3);
 
-        Notes n4 = new Notes("What is network marketing?",
-                "",
+        Notes n4 = new Notes("How to start network marketing?",
+                "start_network_marketing",
                 "Network marketing is a referral-based sales business. A company will offer a product or a" +
                         "service and recruit others to sell it for them. Sales reps, who are independent contractors and not" +
                         "employees, are paid commissions for what they sell. If they recruit other reps, then they‘ll also" +
@@ -82,12 +82,19 @@ public class NotesDbHelper extends SQLiteOpenHelper {
                 "");
         addNote(n4);
 
-        Notes n5 = new Notes("What are the advantages of MLM?",
-                "",
+        Notes n5 = new Notes("Scam or Slam Dunk?",
+                "scam_or_slam_dunk",
                 "The greatest advantage of multi-level marketing is that you can build a thriving business" +
                         "without having to develop a product or a brand.",
                 "");
         addNote(n5);
+
+        Notes n6 = new Notes("Business Model",
+                "business_model",
+                "The greatest advantage of multi-level marketing is that you can build a thriving business" +
+                        "without having to develop a product or a brand.",
+                "");
+        addNote(n6);
     }
 
     private void addNote(Notes notes){

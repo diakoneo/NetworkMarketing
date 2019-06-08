@@ -40,9 +40,7 @@
         person starting a business from scratch, the MLM participant has the support of a direct
         selling company that supplies the products and sometimes offers training as well.
 
-    </string>
-
-    <string name="how_the_mlm_works">
+        HOW THE MLM WORKS"\n"
         As a MLM consultant or contractor or distributor (different companies call them different
         things) you make your money by selling the products to other multilevel marketing participants.
         If they are not already a member of your MLM Company, you sign them up."\n\n"Besides earning money off your own sales, you also earn a percentage of the income generated
@@ -50,6 +48,27 @@
         Often there are bonuses for selling particular amounts of product or signing up a certain number
         of new members; you can earn cars and trips as well as cash. Sounds good, does not it? And being
         part of a well-run MLM business can be a lot like being a member of a large extended family.
+
+        PYRAMID SCHEMES"\n"
+        Unfortunately, not every multilevel marketing opportunity is a legitimate business opportunity.
+        Many pyramid schemes, frauds designed to part the unwary from their money, are disguised.
+
+        Like multilevel marketing, pyramid schemes depend on recruiting people to become
+        distributors of a product or service. Like MLM, the pyramid scheme offers the opportunity to
+        make money by signing up more recruits and by accomplishing certain levels of achievement.
+
+        The big difference between multilevel marketing and pyramid schemes is that MLM is legal
+        in Canada (and most of the US) and pyramid schemes are not. Participating in a pyramid scheme
+        is an offense under the Criminal Code of Canada, punishable by up to five years imprisonment.
+
+        But it can be very difficult for the person looking for a business opportunity to tell the difference
+        between a legitimate MLM opportunity and a pyramid scheme at a glance. How do you tell
+        whether it is a legitimate business opportunity or a scam?
+
+    </string>
+
+    <string name="how_the_mlm_works">
+
 
     </string>
 </resources>

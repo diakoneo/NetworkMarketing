@@ -1,24 +1,25 @@
-package com.androidapk.diakonetapps.networkmarketing;
+package com.androidapk.diakonetapps.networkmarketing.network;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
 
+import com.androidapk.diakonetapps.networkmarketing.R;
 import com.androidapk.diakonetapps.networkmarketing.database.Notes;
 import com.androidapk.diakonetapps.networkmarketing.database.NotesDbHelper;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class ReadActivity extends AppCompatActivity {
 
     private WebView mywebView;
+    private AdView mAdView;
 
     private int itemNumber;
 
@@ -63,5 +64,26 @@ public class ReadActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView.setAdListener(new AdListener(){
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAdFailedToLoad(int i) {
+                super.onAdFailedToLoad(i);
+                Toast.makeText(ReadActivity.this, i + " Banner", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

@@ -5,14 +5,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
+    tools:context=".network.MainActivity">
+=======
+    android:paddingBottom="16dp"
     tools:context=".MainActivity">
+>>>>>>> d427a11d0285c4def8dd25c66e269bd78d86b985
 
     <ListView
+        android:layout_above="@id/adView"
         android:id="@+id/lessons_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"/>
 
-    </ListView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
 
 
 </RelativeLayout>

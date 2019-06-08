@@ -1,4 +1,4 @@
-package com.androidapk.diakonetapps.networkmarketing;
+package com.androidapk.diakonetapps.networkmarketing.network;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -18,8 +18,12 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.androidapk.diakonetapps.networkmarketing.R;
 import com.androidapk.diakonetapps.networkmarketing.database.Notes;
 import com.androidapk.diakonetapps.networkmarketing.database.NotesDbHelper;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,16 +38,35 @@ public class MainActivity extends AppCompatActivity {
 
     private String searchWord = null;
     private SearchView searchView;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Network Marketing");
 
         notesDbHelper = new NotesDbHelper(MainActivity.this);
         notesList = notesDbHelper.getAllNotes();
 
         listview = findViewById(R.id.lessons_list);
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView.setAdListener(new AdListener(){
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAdFailedToLoad(int i) {
+                super.onAdFailedToLoad(i);
+                Toast.makeText(MainActivity.this, i + " Banner", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         loadNotes();
     }
@@ -107,7 +130,8 @@ public class MainActivity extends AppCompatActivity {
             inputMethodManager.hideSoftInputFromWindow(searchView.getWindowToken(), 0);
             searchView.setIconified(true);
         } else {
-            alertExit();
+//            alertExit();
+            finish();
         }
     }
 

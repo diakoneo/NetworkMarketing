@@ -1,7 +1,5 @@
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">POSH App</string>
-=======
+
     <string name="app_name">POSH APP</string>
 >>>>>>> d427a11d0285c4def8dd25c66e269bd78d86b985
 

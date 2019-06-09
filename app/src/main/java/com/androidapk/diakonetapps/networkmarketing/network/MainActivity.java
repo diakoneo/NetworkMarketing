@@ -1,4 +1,4 @@
-package com.androidapk.diakonetapps.networkmarketing;
+package com.androidapk.diakonetapps.networkmarketing.network;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -18,6 +18,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.androidapk.diakonetapps.networkmarketing.R;
 import com.androidapk.diakonetapps.networkmarketing.database.Notes;
 import com.androidapk.diakonetapps.networkmarketing.database.NotesDbHelper;
 import com.google.android.gms.ads.AdListener;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Network Marketing");
 
         notesDbHelper = new NotesDbHelper(MainActivity.this);
         notesList = notesDbHelper.getAllNotes();

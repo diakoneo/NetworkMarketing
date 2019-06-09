@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="16dp"
-    tools:context=".MainActivity">
-
+    tools:context=".network.MainActivity">
+    
     <ListView
         android:layout_above="@id/adView"
         android:id="@+id/lessons_list"

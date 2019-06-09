@@ -1,4 +1,4 @@
-package com.androidapk.diakonetapps.networkmarketing;
+package com.androidapk.diakonetapps.networkmarketing.network;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
 
+import com.androidapk.diakonetapps.networkmarketing.R;
 import com.androidapk.diakonetapps.networkmarketing.database.Notes;
 
 import java.util.ArrayList;

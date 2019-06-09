@@ -1,4 +1,4 @@
-package com.androidapk.diakonetapps.networkmarketing;
+package com.androidapk.diakonetapps.networkmarketing.network;
 
 public class TopicsItem {
 

@@ -66,35 +66,45 @@ public class NotesDbHelper extends SQLiteOpenHelper {
 
         Notes n3 = new Notes("What is network marketing?",
                 "network_marketing",
-                "Network marketing is a referral-based sales business. A company will offer a product or a" +
-                        "service and recruit others to sell it for them. Sales reps, who are independent contractors and not" +
-                        "employees, are paid commissions for what they sell. If they recruit other reps, then they‘ll also" +
-                        "earn a portion of their sales, too.",
+                con.getResources().getString(R.string.network_marketing),
                 "");
         addNote(n3);
 
         Notes n4 = new Notes("How to start network marketing?",
                 "start_network_marketing",
-                "Network marketing is a referral-based sales business. A company will offer a product or a" +
-                        "service and recruit others to sell it for them. Sales reps, who are independent contractors and not" +
-                        "employees, are paid commissions for what they sell. If they recruit other reps, then they‘ll also" +
-                        "earn a portion of their sales, too.",
+                con.getResources().getString(R.string.start_network_marketing),
                 "");
         addNote(n4);
 
         Notes n5 = new Notes("Scam or Slam Dunk?",
                 "scam_or_slam_dunk",
-                "The greatest advantage of multi-level marketing is that you can build a thriving business" +
-                        "without having to develop a product or a brand.",
+                con.getResources().getString(R.string.scam_or_slam_dunk),
                 "");
         addNote(n5);
 
         Notes n6 = new Notes("Business Model",
                 "business_model",
-                "The greatest advantage of multi-level marketing is that you can build a thriving business" +
-                        "without having to develop a product or a brand.",
+                con.getResources().getString(R.string.business_model),
                 "");
         addNote(n6);
+
+        Notes n7 = new Notes("The Startup Process",
+                "startup_process",
+                con.getResources().getString(R.string.startup_process),
+                "");
+        addNote(n7);
+
+        Notes n8 = new Notes("Business Model vs Business Plan",
+                "business_model_vrs_plan",
+                con.getResources().getString(R.string.business_model_vrs_plan),
+                "");
+        addNote(n8);
+
+        Notes n9 = new Notes("Direct Marketing",
+                "direct_marketing",
+                con.getResources().getString(R.string.direct_marketing),
+                "");
+        addNote(n9);
     }
 
     private void addNote(Notes notes){

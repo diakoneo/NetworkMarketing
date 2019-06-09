@@ -83,6 +83,11 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int itemNo = position + 1;
 
+                if (itemNo == 4 || itemNo == 5) {
+                    Toast.makeText(MainActivity.this, "Populating content ...", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
               //  Toast.makeText(MainActivity.this, "Position: " +position, Toast.LENGTH_SHORT).show();
                 Intent read = new Intent(MainActivity.this, ReadActivity.class);
                 read.putExtra("item_number", itemNo);
@@ -183,7 +188,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

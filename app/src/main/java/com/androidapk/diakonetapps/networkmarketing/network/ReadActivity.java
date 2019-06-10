@@ -3,11 +3,13 @@ package com.androidapk.diakonetapps.networkmarketing.network;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.androidapk.diakonetapps.networkmarketing.R;
 import com.androidapk.diakonetapps.networkmarketing.database.Notes;

@@ -20,8 +20,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ReadActivity"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".network.ReadActivity"/>
+        <activity android:name=".network.MainActivity"/>
         <activity android:name=".HomeActivity"/>
 
         <meta-data

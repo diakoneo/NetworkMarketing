@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         this.notesList = new ArrayList<>();
         List<Notes> list = notesDbHelper.getAllNotes();// get All notes from DataBase
         this.notesList.addAll(list);
-        this.adapter = new TopicsAdapter(MainActivity.this, notesList);
+        this.adapter = new TopicsAdapter( MainActivity.this, notesList);
         // set listener to adapter
         listview.setAdapter(adapter);
         adapter.notifyDataSetChanged();
@@ -85,14 +85,14 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int itemNo = position + 1;
 
-                if (itemNo == 4 || itemNo == 5) {
-                    Toast.makeText(MainActivity.this, "Populating content ...", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//                if (itemNo == 4 || itemNo == 5) {
+//                    Toast.makeText(MainActivity.this, "Populating content ...", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
 
               //  Toast.makeText(MainActivity.this, "Position: " +position, Toast.LENGTH_SHORT).show();
                 Intent read = new Intent(MainActivity.this, ReadActivity.class);
-                read.putExtra("item_number", itemNo);
+                read.putExtra("item_n  umber", itemNo);
                 startActivity(read);
             }
         });

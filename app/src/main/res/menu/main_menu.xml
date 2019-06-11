@@ -11,16 +11,19 @@
         app:showAsAction="always" />
 
     <item
+        android:visible="false"
         android:id="@+id/main_menu_about"
         android:orderInCategory="101"
         android:title="About App" />
 
     <item
+        android:visible="false"
         android:id="@+id/main_menu_share"
         android:orderInCategory="102"
         android:title="Share" />
 
     <item
+        android:visible="false"
         android:id="@+id/main_menu_exit"
         android:orderInCategory="103"
         android:title="Exit" />

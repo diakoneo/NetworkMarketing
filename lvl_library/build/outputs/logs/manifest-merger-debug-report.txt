@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:1-21:12
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:1-21:12
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:1-21:12
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:1-21:12
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:1-21:12
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:1-21:12
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:1-21:12
+	package
+		ADDED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:17:5-51
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+		ADDED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:1-21:12
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+		ADDED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:1-21:12
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:16:11-69
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:20:5-73
+	android:name
+		ADDED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml:20:22-70
+uses-sdk
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+		ADDED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+		ADDED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml
+		INJECTED from F:\Development_Files\Pastech\NetworkMarketing\lvl_library\src\main\AndroidManifest.xml

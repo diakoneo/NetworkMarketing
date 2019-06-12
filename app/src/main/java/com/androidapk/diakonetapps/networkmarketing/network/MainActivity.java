@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         this.notesList = new ArrayList<>();
         List<Notes> list = notesDbHelper.getAllNotes(course);// get All notes from DataBase
         this.notesList.addAll(list);
-        this.adapter = new TopicsAdapter(MainActivity.this, notesList);
+        this.adapter = new TopicsAdapter( MainActivity.this, notesList);
         // set listener to adapter
         listview.setAdapter(adapter);
         adapter.notifyDataSetChanged();
@@ -97,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
 
                 String name = notesList.get(position).getTopic();
 
-                //Toast.makeText(MainActivity.this, "Item: " +name, Toast.LENGTH_SHORT).show();
                 Intent read = new Intent(MainActivity.this, ReadActivity.class);
                 read.putExtra("item_number", name);
                 startActivity(read);
@@ -151,7 +150,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

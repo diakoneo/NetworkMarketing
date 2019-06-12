@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ReadNotes"></activity>
         <activity android:name=".SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,8 +19,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ReadActivity"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".network.ReadActivity"/>
+        <activity android:name=".network.MainActivity"/>
         <activity android:name=".HomeActivity"/>
 
         <meta-data

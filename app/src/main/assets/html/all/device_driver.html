@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>definition</title>
+
+	<style type="text/css">
+		ul{
+                        list-style-position: inside;
+                        padding-left: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        margin: 0
+        }
+        li{
+                font-weight: bold;
+                font-size: 20px;
+                text-decoration: none;
+        }
+
+        p, ul li{
+            font-size: 20px;
+        }
+
+		h1{
+            text-align: center;
+            
+			font-size: 25px;
+            color: #38355B;
+            text-transform: uppercase;
+		}
+        img{
+                    width: 100%;
+                    margin : 0px 0px auto;
+            }
+
+        .diff ul li{
+            font-weight: normal;
+        }
+	</style>
+</head>
+<body>
+	<h1>Device Drivers</h1>
+    <p>A device driver is a specific type of computer software developed to allow interaction with hardware devices. Typically this constitutes an interface for communicating with the device, through the specific computer bus or communications subsystem that the hardware is connected to, providing commands to and/or receiving data from the device, and on the other end, the requisite interfaces to the operating system and software applications. It is a specialized hardware-dependent computer program which is also operating system specific that enables another program, typically an operating system or applications software package or computer program running under the operating system kernel, to interact transparently with a hardware device, and usually provides the requisite interrupt handling necessary for any necessary asynchronous time-dependent hardware interfacing needs.
+    <br><br>
+    The key design goal of device drivers is abstraction. Every model of hardware (even within the same class of device) is different. Newer models also are released by manufacturers that provide more reliable or better performance and these newer models are often controlled differently. Computers and their operating systems cannot be expected to know how to control every device, both now and in the future. To solve this problem, operating systems essentially dictate how every type of device should be controlled. The function of the device driver is then to translate these operating system mandated function calls into device specific calls.
+    <br><br>
+    In theory a new device, which is controlled in a new manner, should function correctly if a suitable driver is available. This new driver ensures that the device appears to operate as usual from the operating system's point of view.
+    <br><br>
+    Under versions of Windows before Vista and versions of Linux before 2.6, all driver execution was co-operative, meaning that if a driver entered an infinite loop it would freeze the system. More recent revisions of these operating systems incorporate kernel preemption, where the kernel interrupts the driver to give it tasks, and then separates itself from the process until it receives a response from the device driver, or gives it more tasks to do.</p>
+
+</body>
+</html>

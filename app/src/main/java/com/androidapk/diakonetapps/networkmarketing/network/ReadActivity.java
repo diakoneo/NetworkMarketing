@@ -3,11 +3,13 @@ package com.androidapk.diakonetapps.networkmarketing.network;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.androidapk.diakonetapps.networkmarketing.R;
 import com.androidapk.diakonetapps.networkmarketing.database.Notes;
@@ -21,7 +23,7 @@ public class ReadActivity extends AppCompatActivity {
     private WebView mywebView;
     private AdView mAdView;
 
-    private int itemNumber;
+    private String itemNumber;
 
     private Notes notes;
     private NotesDbHelper helper;
@@ -36,8 +38,8 @@ public class ReadActivity extends AppCompatActivity {
         helper = new NotesDbHelper(ReadActivity.this);
 
         if (getIntent().getExtras() != null){
-            itemNumber = getIntent().getExtras().getInt("item_number", 0);
-            notes = helper.getNoteByID(itemNumber);
+            itemNumber = getIntent().getExtras().getString("item_number", null);
+            notes = helper.getNoteByTopic(itemNumber);
         }
 
         setTitle(notes.getTopic());
@@ -49,7 +51,7 @@ public class ReadActivity extends AppCompatActivity {
         WebSettings webSettings= mywebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        mywebView.loadUrl("file:///android_asset/html/network_marketing/"+notes.getFile()+".html");
+        mywebView.loadUrl("file:///android_asset/html/all/"+notes.getFile()+".html");
         mywebView.setWebViewClient(new WebViewClient());
         mywebView.setWebChromeClient(new WebChromeClient(){
             @Override
@@ -85,5 +87,16 @@ public class ReadActivity extends AppCompatActivity {
                 Toast.makeText(ReadActivity.this, i + " Banner", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

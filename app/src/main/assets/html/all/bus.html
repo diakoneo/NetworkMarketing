@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>definition</title>
+
+    <style type="text/css">
+        ul{
+                list-style-position: inside;
+                padding-left: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin: 0
+        }
+        li{
+                font-weight: bold;
+                font-size: 20px;
+                text-decoration: none;
+        }
+
+        p, ul li{
+            font-size: 20px;
+        }
+
+        h1{
+            text-align: center;
+            
+            font-size: 25px;
+            color: #38355B;
+            text-transform: uppercase;
+        }
+        img{
+                    width: 100%;
+                    margin : 0px 0px auto;
+            }
+
+        .diff li{
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>BUS</h1>
+    <p>When referring to a computer, the bus also known as the address bus, data bus, or local bus is a data connection between two or more devices connected to the computer. For example, a bus enables a computer processor to communicate with the memory or a video card to communicate with the memory. The bus contains multiple wires (signal lines) that contain addressing information that describes the memory location of where the data is being sent or where it is being retrieved. Each wire in the bus carries a single bit of information, which means the more wires a bus has the more information it can address. For example, a computer with a 32-bit address bus can address 4 GB of memory, and a computer with a 36-bit bus can address 64 GB of memory. You can think of it as a public transportation or school bus.
+    <img src="img/poh_img_nineteen.jpg">
+    <img src="img/poh_img_twenty.jpg">
+    <br>
+    <strong>Note:</strong> Bus is not an acronym for anything.</p>
+
+    <ul class="diff">
+        <li>A bus is capable of being a parallel or serial bus and today all computers utilize two bus types, an internal bus or local bus and an external bus, also called the expansion bus.</li>
+        <li>An internal bus enables communication between internal components such as a card and memory.</li>
+        <li>An external bus is capable of communicating with external components such as a USB or SCSI device.</li>
+        <li>A computer or device's bus speed is listed in MHz, e.g. 100 MHz FSB. The throughput of a bus is measured in second or megabytes per second.</li>
+    </ul>
+
+    <h2>Examples of computer buses</h2>
+     <ul class="diff">
+        <li>AGP HyperTransport PATA</li>
+        <li>ATA IDE PC Card</li>
+        <li>EISA ISA PCI</li>
+        <li>SATA</li>
+        <li>SBus SCSI</li>
+        <li>eSATA ExpressCard</li>
+        <li>Firewire</li>
+        <li>FSB</li>
+        <li>MCA</li>
+        <li>NuBus</li>
+        <li>PCIe</li>
+        <li>PCMCIA</li>
+        <li>Thunderbolt</li>
+        <li>USB</li>
+        <li>VLB</li>
+        <li>VME Bus</li>
+    </ul>
+
+    <p>Today, many of the buses listed above are no longer used or are not as common. Below is a listing of the most buses and how they are used with a computer.</p>
+    <ul class="diff">
+        <li><strong>eSATA and SATA</strong>- Computer drives and disc drives.</li>
+        <li><strong>PCIe</strong>- Computer expansion cards and video cards.</li>
+        <li><strong>USB</strong>- Computer peripherals.</li>
+     </ul>
+
+     <img src="img/poh_img_twenty_one.jpg">
+
+     <h2>hat Are Three Types of Buses on a Motherboard?</h2>
+    <p>A computer sends several kinds of electronic signals back and forth among its various components. For efficiency, separate paths on the motherboard called buses each carry only one kind of signal; this boosts the computer's speed and simplifies its operation. While PC motherboards have different buses for expansion cards and external devices, all computers have three fundamental buses: Control, Instruction and Address. The whole system operates through these buses.</p>
+
+    <h2>Bus Architecture</h2>
+    <p>Computers consist of several main functional units, including the central processor, memory and input/output. The central processor performs basic arithmetic and logic, memory stores programs and data, and input/output routes data to the computer's keyboard, screen and hard drive. These parts communicate with each other. Some computer designs use a single bus shared by all parts. While in expensive, the system must manage its signals carefully, and some parts wait until others finish communicating and relinquish control of the bus.
+    <br><br>
+    Multiple buses reduce the waiting time and keep the parts running efficiently. The layout of a computer's buses and parts is called its bus architecture.</p>
+
+    <h2>Control Bus</h2>
+    <p>The motherboard's control bus manages the activity in the system. The control bus, like the other buses, is simply a set of connections among the parts in the computer. All parts "agree to recognize" that if one connection carries a voltage and the next one does not, it means that the central processor reads from memory. If the connections reverse roles, the processor writes to memory. Other connections deal with the "chunking" of data 8, 16, 32 or 64 bits at a time. Still others determine if data is being shuttled to the central processor from memory or the keyboard. This signaling system prevents data from going to the wrong place.</p>
+
+    <h2>Data Bus</h2>
+    <p>The data bus acts as a conduit for data from the keyboard, memory and other devices. It passes information at speeds up to billions of characters per second. The central processor reads the data, performs calculations, and moves new data back to memory, the hard drive and other locations. The control bus determines which direction the data is moving. </p>
+
+    <h2>Address Bus</h2>
+    <p>The computer must be able to access every character of memory rapidly, so every character has its own address number. The central processor specifies which addresses it wants to read or write and the address bus carries this information to a memory controller circuit, which locates and fetches the information. Some locations, called random-access memory, hold program instructions and temporary calculation results. Other locations point to the hard drive, mouse and keyboard. The control bus specifies which of these two sets of addresses become active for a particular memory operation.</p>
+
+    <h2>The Brains</h2>
+    <p>In the first module, we saw a simple block diagram of the computer processing data and creating information. This is simply an update with some of the hardware we talked about shown (along with some sample I/O devices). It's still simple!
+    <img src="poh_img_twenty_two.jpg">
+
+    Lots of people call the CPU the brain of the computer - an overly simple analogy. But if we're going to use it, let's include the brain's short-term or working memory, RAM with cache being even shorter-term memory. If you share my distaste for the label of "brain", we can call it the computer's "processor system".</p> 
+</p>
+</body>
+</html>

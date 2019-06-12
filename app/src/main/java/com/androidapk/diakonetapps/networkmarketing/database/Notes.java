@@ -6,15 +6,19 @@ public class Notes {
     private String file;
     private String note;
     private String image;
+    private String course;
 
     public Notes(){}
 
-    public Notes(String topic, String file, String note, String image) {
+
+    public Notes(String topic, String file, String note, String image, String course) {
         this.topic = topic;
         this.file = file;
         this.note = note;
         this.image = image;
+        this.course = course;
     }
+
 
     public String getTopic() {
         return topic;
@@ -46,5 +50,13 @@ public class Notes {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
     }
 }

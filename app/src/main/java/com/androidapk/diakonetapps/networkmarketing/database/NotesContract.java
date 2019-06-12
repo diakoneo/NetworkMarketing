@@ -11,6 +11,10 @@ public final class NotesContract {
         public static final String COLUMN_TOPIC = "topic";
         public static final String COLUMN_FILE = "file";
         public static final String COLUMN_TEXT = "text";
+        public static final String COLUMN_COURSE = "course";
         public static final String COLUMN_IMAGE = "image";
+
+        
+
     }
 }

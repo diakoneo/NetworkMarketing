@@ -30,6 +30,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private String course;
+
     private ListView listview;
     private List<Notes> notesList;
 
@@ -44,10 +46,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("Network Marketing");
+
+        checkIntent();
 
         notesDbHelper = new NotesDbHelper(MainActivity.this);
-        notesList = notesDbHelper.getAllNotes();
+        notesList = notesDbHelper.getAllNotes(course);
 
         listview = findViewById(R.id.lessons_list);
 
@@ -71,9 +74,16 @@ public class MainActivity extends AppCompatActivity {
         loadNotes();
     }
 
+    private void checkIntent() {
+        if (getIntent().getExtras() != null){
+            course = getIntent().getExtras().getString("course").trim();
+            setTitle(course.toUpperCase());
+        }
+    }
+
     private void loadNotes() {
         this.notesList = new ArrayList<>();
-        List<Notes> list = notesDbHelper.getAllNotes();// get All notes from DataBase
+        List<Notes> list = notesDbHelper.getAllNotes(course);// get All notes from DataBase
         this.notesList.addAll(list);
         this.adapter = new TopicsAdapter(MainActivity.this, notesList);
         // set listener to adapter
@@ -83,42 +93,18 @@ public class MainActivity extends AppCompatActivity {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                int itemNo = position + 1;
+              //  int itemNo = parent.getSelectedItemPosition();
 
-              //  Toast.makeText(MainActivity.this, "Position: " +position, Toast.LENGTH_SHORT).show();
+                String name = notesList.get(position).getTopic();
+
+                //Toast.makeText(MainActivity.this, "Item: " +name, Toast.LENGTH_SHORT).show();
                 Intent read = new Intent(MainActivity.this, ReadActivity.class);
-                read.putExtra("item_number", itemNo);
+                read.putExtra("item_number", name);
                 startActivity(read);
             }
         });
 
         listview.setTextFilterEnabled(true);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        searchItem(menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int menuId = item.getItemId();
-
-        if (menuId == R.id.main_menu_about){
-
-            return true;
-        }else if (menuId == R.id.main_menu_share){
-
-            return true;
-        }else if (menuId == R.id.main_menu_exit){
-            alertExit();
-            return true;
-        } else{
-            return false;
-        }
-
     }
 
     @Override
@@ -135,37 +121,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void alertExit() {
-        AlertDialog.Builder a_builder = new AlertDialog.Builder(MainActivity.this);
-        a_builder.setMessage("Do you really want to Exit?");
-        a_builder.setCancelable(true);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.sub_menu, menu);
+        searchItem(menu);
 
-        a_builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(getApplicationContext(), "Thank You!", Toast.LENGTH_LONG).show();
-                dialog.cancel();
-                finish();
-                System.exit(1);
-            }
-        });
-
-        a_builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-
-        AlertDialog alert = a_builder.create();
-        alert.getWindow().setGravity(Gravity.BOTTOM);
-        alert.setTitle("Alert!!!");
-        alert.show();
+        return true;
     }
 
     private void searchItem(Menu menu) {
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        searchView = (SearchView) menu.findItem(R.id.main_menu_search).getActionView();
+        searchView = (SearchView) menu.findItem(R.id.sub_menu_search).getActionView();
 
         searchView.setSubmitButtonEnabled(true);
         searchView.setQueryHint("Search for topic or content!");
